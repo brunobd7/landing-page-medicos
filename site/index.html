@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Nome da marca] — Profissionais, especialidades e locais de atendimento</title>
+  <meta name="description" content="Conheça nossos profissionais, especialidades e locais de atendimento.">
+  <meta name="theme-color" content="#34452F">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- A — Cabeçalho -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="#inicio" aria-label="Início" data-logo></a>
+      <nav class="nav" aria-label="Navegação principal">
+        <a class="nav__link" href="#inicio">Início</a>
+        <a class="nav__link" href="#profissionais">Profissionais</a>
+        <a class="nav__link" href="#especialidades">Especialidades</a>
+        <a class="nav__link" href="#locais">Locais de atendimento</a>
+        <a class="nav__link" href="#contato">Contato</a>
+        <a class="btn btn--contorno btn--sm" href="contato.html">Fale conosco</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="menu-mobile" aria-label="Navegação principal (celular)">
+      <a class="nav__link" href="#inicio">Início</a>
+      <a class="nav__link" href="#profissionais">Profissionais</a>
+      <a class="nav__link" href="#especialidades">Especialidades</a>
+      <a class="nav__link" href="#locais">Locais de atendimento</a>
+      <a class="nav__link" href="#contato">Contato</a>
+      <a class="btn btn--primario" href="contato.html">Fale conosco</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <!-- B — Apresentação principal -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__texto">
+          <span class="eyebrow">Atendimento médico</span>
+          <h1 class="hero__titulo">Cuidado e confiança em cada consulta.</h1>
+          <p class="hero__sub">Conheça nossos profissionais, especialidades e locais de atendimento.</p>
+          <div class="hero__acoes">
+            <a class="btn btn--primario" href="#profissionais">Conheça os profissionais
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+            </a>
+            <a class="btn btn--contorno" href="#locais">Locais de atendimento</a>
+          </div>
+        </div>
+        <div class="hero__media">
+
+          <div id="hero-foto"></div>
+          <svg class="hero__ramo" aria-hidden="true" width="120" height="160" viewBox="0 0 120 160" fill="none" stroke="#A98276" stroke-width="1.2" stroke-linecap="round"><path d="M60 158C60 110 58 60 64 4"/><path d="M61 120c-18-6-30-20-32-38 18 4 30 18 32 38z"/><path d="M62 84c18-6 30-20 32-38-18 4-30 18-32 38z"/><path d="M63 48c-14-4-22-14-24-28 14 3 22 13 24 28z"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- C — Perfis dos profissionais -->
+    <section class="section section--bege" id="profissionais">
+      <div class="container">
+        <div class="section-head section-head--centro">
+          <span class="eyebrow eyebrow--centro">Profissionais</span>
+          <h2 class="section-title">Conheça quem cuida de você</h2>
+        </div>
+        <div class="perfis" id="lista-perfis"></div>
+      </div>
+    </section>
+
+    <!-- D — Especialidades -->
+    <section class="section" id="especialidades">
+      <div class="container esp__grid">
+        <div class="esp__intro">
+          <span class="eyebrow">Especialidades</span>
+          <h2 class="section-title">Áreas de atuação</h2>
+          <p class="section-lead">Cada profissional atua em sua própria área. Consulte abaixo as especialidades de cada um.</p>
+        </div>
+        <div class="esp__cards" id="lista-especialidades"></div>
+      </div>
+    </section>
+
+    <!-- E — Locais de atendimento -->
+    <section class="section section--bege" id="locais">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Locais de atendimento</span>
+          <h2 class="section-title">Onde atendemos</h2>
+        </div>
+        <div id="lista-locais"></div>
+      </div>
+    </section>
+
+    <!-- F — Contato -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section-head section-head--centro">
+          <span class="eyebrow eyebrow--centro">Contato</span>
+          <h2 class="section-title">Fale com o profissional</h2>
+          <p class="section-lead">Escolha o profissional e o canal de sua preferência.</p>
+        </div>
+        <div class="contatos" id="lista-contatos"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- G — Rodapé -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__col--marca">
+          <div data-logo-claro></div>
+          <div id="footer-profissionais" class="footer__col" style="gap:10px"></div>
+        </div>
+        <nav class="footer__col" aria-label="Navegação do rodapé">
+          <span class="footer__titulo">Navegação</span>
+          <a class="footer__link" href="#inicio">Início</a>
+          <a class="footer__link" href="#profissionais">Profissionais</a>
+          <a class="footer__link" href="#especialidades">Especialidades</a>
+          <a class="footer__link" href="#locais">Locais de atendimento</a>
+          <a class="footer__link" href="#contato">Contato</a>
+        </nav>
+        <div class="footer__col" id="footer-contatos"></div>
+      </div>
+      <div class="footer__base">
+        <span>© <span data-ano></span> <span data-marca></span>. Todos os direitos reservados.</span>
+        <span><span data-rt></span> · <a href="#" data-privacidade>Política de privacidade</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/dados.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
